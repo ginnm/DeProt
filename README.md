@@ -19,8 +19,9 @@ Output:
 
 ## Using DeProt with huggingface transformers
 ```python
-from transformers import AutoModelForMaskedLM
-model = AutoModelForMaskedLM.from_pretrianed("AI4Protein/DeProt-2048")
+from transformers import AutoModelForMaskedLM, AutoTokenizer
+model = AutoModelForMaskedLM.from_pretrianed("AI4Protein/DeProt-2048", trust_remote_code=True)
+tokenizer = AutoTokenizer.from_pretrained("AI4Protein/DeProt-2048", trust_remote_code=True)
 ```
 
 ## Zero-shot mutant effect prediction
