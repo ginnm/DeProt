@@ -26,12 +26,26 @@ Output:
 ```
 
 
-## Using DeProt with huggingface transformers
+## DeProt are deployed in huggingface 🤗 Transformers
 ```python
 from transformers import AutoModelForMaskedLM, AutoTokenizer
 model = AutoModelForMaskedLM.from_pretrianed("AI4Protein/DeProt-2048", trust_remote_code=True)
 tokenizer = AutoTokenizer.from_pretrained("AI4Protein/DeProt-2048", trust_remote_code=True)
 ```
+
+### Available models
+| **Model** | **Description** |
+|:---:|:---:|
+| AI4Protein/Deprot-20 | structure vocab size = 20 |
+| AI4Protein/Deprot-128 | structure vocab size = 128 |
+| AI4Protein/Deprot-512 | structure vocab size = 512 |
+| AI4Protein/Deprot-1024 | structure vocab size = 1024 |
+| AI4Protein/Deprot-2048 | structure vocab size = 2048 |
+| AI4Protein/Deprot-4096 | structure vocab size = 4096 |
+| AI4Protein/Deprot-2048-NO_AA2SS | Ablative  |
+| AI4Protein/Deprot-2048-NO_SS2AA | Ablative  |
+| AI4Protein/Deprot-2048-NO_AA2POS | Ablative  |
+| AI4Protein/Deprot-2048-NO_POS2AA | Ablative  |
 
 ## Zero-shot mutant effect prediction
 See notebook [Zero-shot mutant effect prediction](zero_shot/score_mutant.ipynb)
