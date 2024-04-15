@@ -1,7 +1,7 @@
 # DeProt
 Code for DeProt. A protein language model with quantizied structure and disentangled attention
 
-## Install
+## 1 Install
 
 ```shell
 git clone https://github.com/ginnm/DeProt.git
@@ -10,7 +10,7 @@ pip install -r requirements.txt
 export PYTHONPATH=$PYTHONPATH:$(pwd)
 ```
 
-## Structure quantizer
+## 2 Structure quantizer
 
 ![Structure quantizer](images/structure_quantizer.png)
 
@@ -26,14 +26,14 @@ Output:
 ```
 
 
-## DeProt models have been uploaded to huggingface 🤗 Transformers
+## 3 DeProt models have been uploaded to huggingface 🤗 Transformers
 ```python
 from transformers import AutoModelForMaskedLM, AutoTokenizer
 model = AutoModelForMaskedLM.from_pretrianed("AI4Protein/DeProt-2048", trust_remote_code=True)
 tokenizer = AutoTokenizer.from_pretrained("AI4Protein/DeProt-2048", trust_remote_code=True)
 ```
 
-### Available models
+### 3.1 Available models
 | **Model** | **Description** |
 |:---:|:---:|
 | AI4Protein/Deprot-20 | structure vocab size = 20 |
@@ -47,10 +47,12 @@ tokenizer = AutoTokenizer.from_pretrained("AI4Protein/DeProt-2048", trust_remote
 | AI4Protein/Deprot-2048-NO_AA2POS | Ablative  |
 | AI4Protein/Deprot-2048-NO_POS2AA | Ablative  |
 
-## Zero-shot mutant effect prediction
-See notebook [Zero-shot mutant effect prediction](zero_shot/score_mutant.ipynb)
+## 4 Zero-shot mutant effect prediction
 
-### Run ProteinGYM Benchmark
+### 4.1 Example notebook
+[Zero-shot mutant effect prediction](zero_shot/score_mutant.ipynb)
+
+### 4.2 Run ProteinGYM Benchmark
 
 Download dataset from [Google Driver](https://drive.google.com/file/d/1lSckfPlx7FhzK1FX7EtmmXUOrdiMRerY/view?usp=sharing).
 (This file contains quantized structures within ProteinGYM).
@@ -65,12 +67,12 @@ python zero_shot/proteingym_benchmark.py --model_path AI4Protein/DeProt-2048 \
 --structure_dir example_data/structure_sequence/2048
 ```
 
-## Representation
+## 5 Representation
 ```
 
 ```
 
-## Transfer-Learning
+## 6 Transfer-Learning
 ```
 
 ```
