@@ -2,6 +2,9 @@
 Code for DeProt. A protein language model with quantizied structure and disentangled attention
 
 ## Structure quantizer
+
+![Structure quantizer](images/structure_quantizer.png)
+
 ```python
 from deprot.structure.quantizer import PdbQuantizer
 processor = PdbQuantizer()
