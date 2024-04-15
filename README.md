@@ -26,7 +26,7 @@ Output:
 ```
 
 
-## DeProt are deployed in huggingface 🤗 Transformers
+## DeProt models have been uploaded to huggingface 🤗 Transformers
 ```python
 from transformers import AutoModelForMaskedLM, AutoTokenizer
 model = AutoModelForMaskedLM.from_pretrianed("AI4Protein/DeProt-2048", trust_remote_code=True)
