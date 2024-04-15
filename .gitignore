@@ -191,3 +191,7 @@ pyrightconfig.json
 # End of https://www.toptal.com/developers/gitignore/api/python,linux
 .code/
 .vscode/
+example_data/proteingym_benchmark.zip
+example_data/residue_sequence
+example_data/structure_sequence
+example_data/substitutions

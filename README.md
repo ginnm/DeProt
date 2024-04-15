@@ -23,8 +23,18 @@ See notebook [Zero-shot mutant effect prediction](zero_shot/score_mutant.ipynb)
 
 ## Run ProteinGYM Benchmark
 
-Download dataset from [Google Driver](https://drive.google.com/file/d/1-HB5be-pMiuVc-4S2S4sH0Yf7b6u5tno/view)
+Download dataset from [Google Driver](https://drive.google.com/file/d/1lSckfPlx7FhzK1FX7EtmmXUOrdiMRerY/view?usp=sharing).
+(This file contains quantized structures within ProteinGYM).
 
+```shell
+cd example_data
+unzip proteingym_benchmark.zip
+```
+
+```shell
+python zero_shot/proteingym_benchmark.py --model_path AI4Protein/DeProt-2048 \
+--structure_dir example_data/structure_sequence/2048
+```
 
 ## Representation
 ```

@@ -386,7 +386,7 @@ def process_pdb_file(
     max_distance,
 ):
     result_dict, subgraph_dict = {}, {}
-    result_dict["name"] = pdb_file.split("/")[-1]
+    result_dict["name"] = Path(pdb_file).name
     # build graph, maybe lack of some atoms
     try:
         graph = generate_graph(pdb_file, max_distance)
