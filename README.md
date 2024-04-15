@@ -19,9 +19,7 @@ model = AutoModelForMaskedLM.from_pretrianed("AI4Protein/DeProt-2048")
 ```
 
 ## Zero-shot mutant effect prediction
-```
-
-```
+See notebook [Zero-shot mutant effect prediction](zero_shot/score_mutant.ipynb)
 
 ## Representation
 ```
