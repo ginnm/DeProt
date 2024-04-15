@@ -7,10 +7,15 @@ Code for DeProt. A protein language model with quantizied structure and disentan
 
 ```python
 from deprot.structure.quantizer import PdbQuantizer
-processor = PdbQuantizer()
-result = processor("example_data/p1.pdb", return_residue_seq=True)
-print(result)
+processor = PdbQuantizer(structure_vocab_size=2048)
+result = processor("example_data/p1.pdb", return_residue_seq=False)
 ```
+
+Output:
+```
+[407, 998, 1841, 1421, 653, 450, 117, 822, ...]
+```
+
 
 ## Using DeProt with huggingface transformers
 ```python
