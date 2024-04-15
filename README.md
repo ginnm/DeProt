@@ -21,7 +21,7 @@ model = AutoModelForMaskedLM.from_pretrianed("AI4Protein/DeProt-2048")
 ## Zero-shot mutant effect prediction
 See notebook [Zero-shot mutant effect prediction](zero_shot/score_mutant.ipynb)
 
-## Run ProteinGYM Benchmark
+### Run ProteinGYM Benchmark
 
 Download dataset from [Google Driver](https://drive.google.com/file/d/1lSckfPlx7FhzK1FX7EtmmXUOrdiMRerY/view?usp=sharing).
 (This file contains quantized structures within ProteinGYM).
