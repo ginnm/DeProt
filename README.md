@@ -1,6 +1,15 @@
 # DeProt
 Code for DeProt. A protein language model with quantizied structure and disentangled attention
 
+## Install
+
+```shell
+git clone https://github.com/ginnm/DeProt.git
+cd DeProt
+pip install -r requirements.txt
+export PYTHONPATH=$PYTHONPATH:$(pwd)
+```
+
 ## Structure quantizer
 
 ![Structure quantizer](images/structure_quantizer.png)
