@@ -82,5 +82,15 @@ python zero_shot/proteingym_benchmark.py --model_path AI4Protein/DeProt-2048 \
 If you use DeProt in your research, please cite the following paper:
 
 ```
-
+@article {Li2024.04.15.589672,
+	author = {Mingchen Li and Yang Tan and Bozitao Zhong and Ziyi Zhou and Huiqun Yu and Xinzhu Ma and Wanli Ouyang and Liang Hong and Bingxin Zhou and Pan Tan},
+	title = {DeProt: A protein language model with quantizied structure and disentangled attention},
+	elocation-id = {2024.04.15.589672},
+	year = {2024},
+	doi = {10.1101/2024.04.15.589672},
+	publisher = {Cold Spring Harbor Laboratory},
+	URL = {https://www.biorxiv.org/content/early/2024/04/17/2024.04.15.589672},
+	eprint = {https://www.biorxiv.org/content/early/2024/04/17/2024.04.15.589672.full.pdf},
+	journal = {bioRxiv}
+}
 ```
